@@ -1,6 +1,6 @@
 body, html {
 	text-align: center;
-	background: url(https://image.noelshack.com/fichiers/2018/46/6/1542477917-fond-page-web-blanc.jpg) center fixed;
+	background: #e0e0e0/*url(https://image.noelshack.com/fichiers/2018/46/6/1542477917-fond-page-web-blanc.jpg) center fixed*/;
 	padding: 0;
 	margin: 0;
 }
@@ -8,9 +8,39 @@ body, html {
 header {
 	position: relative;
 	z-index: 10;
-
 	color: white;
 	padding-bottom: 0%;
+}
+
+img:hover {
+	border: 1px solid black;
+}
+
+.a {
+	color: white;
+	transition-property: color;
+	transition-duration: 0.5s;
+}
+
+.a:hover {
+	color: black;
+	transition-duration: 0.5s;
+}
+
+.btn {
+	box-shadow: none;
+	color: #e53935;
+	border: 2px solid #e53935;
+	transition-property: color;
+	transition-property: background;
+	transition-duration: 0.5s;
+}
+
+.btn:hover {
+	color: white;
+	background: #e53935;
+	box-shadow: none;
+	transition-duration: 0.5s;
 }
 
 .h1, .h4 {
